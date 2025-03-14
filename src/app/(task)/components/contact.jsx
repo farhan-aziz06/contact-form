@@ -27,7 +27,7 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="Enter name"
-              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
+              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg placeholder-[#B3B3B3]"
               required
             />
           </div>
@@ -36,7 +36,7 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="enter last name"
-              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
+              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg placeholder-[#B3B3B3]"
               required
             />
           </div>
@@ -45,7 +45,7 @@ const ContactForm = () => {
             <input
               type="email"
               placeholder="email@gmail.com"
-              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
+              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg placeholder-[#B3B3B3]"
               required
             />
           </div>
@@ -116,7 +116,7 @@ const ContactForm = () => {
             <input
               type="text"
               placeholder="Add details"
-              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
+              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg placeholder-[#B3B3B3]"
               required
             />
           </div>
@@ -124,7 +124,7 @@ const ContactForm = () => {
             <label className="font-open-sans text-sm md:text-[16px]">Tell us about your project</label>
             <input
               placeholder="Add details"
-              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
+              className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg placeholder-[#B3B3B3]"
               required
             />
           </div>
