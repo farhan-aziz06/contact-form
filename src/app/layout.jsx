@@ -1,4 +1,4 @@
-import { Poppins, Open_Sans,Mulish } from "next/font/google";
+import { Poppins, Open_Sans,Mulish,} from "next/font/google";
 import "./globals.css";
 
 // Configure Poppins
@@ -28,7 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} ${openSans.variable}`}>
+      <body className={`${poppins.className} ${openSans.variable} ${mulish.variable}`}>
         {children}
       </body>
     </html>

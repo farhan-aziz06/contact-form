@@ -137,7 +137,7 @@ const Info = () => {
 
         <div className=" hidden md:flex lg:flex-col md:flex-row lg:gap-2 items-center lg:items-start md:justify-between lg:mt-36 xl:mt-26 mb-3 p-6 lg:max-w-lg rounded-lg text-center bg-[#7165FF33]">
           <div className=" flex flex-col gap-2">
-            <h3 className=" text-left font-recoleta font-bold text-2xl md:text-3xl capitalize">
+            <h3 className=" text-left font-recoleta text-2xl md:text-3xl capitalize">
               Schedule A Call
             </h3>
             <p className="text-left font-normal text-lg md:text-xl mr-12">

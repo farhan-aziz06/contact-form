@@ -128,7 +128,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <button className="font-mulish-bold text-lg w-full py-4 my-3 bg-[#7165FF] text-white rounded-lg leading-[32px]">
+          <button className="font-mulish-bold text-lg w-full py-4 my-2.5 bg-[#7165FF] text-white rounded-lg leading-[32px]">
             Submit
           </button>
         </form>
