@@ -22,7 +22,8 @@ const ContactForm = () => {
 
         <form className="">
           <div>
-            <label className="font-normal text-sm md:text-[16px]">Name</label>
+          <label className="font-open-sans font-normal text-sm md:text-[16px]">Name</label>
+            {/* <label className="font-normal text-sm md:text-[16px]">Name</label> */}
             <input
               type="text"
               placeholder="Enter name"
@@ -31,7 +32,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="font-normal text-sm md:text-[16px]">Last Name</label>
+            <label className="font-open-sans font-normal text-sm md:text-[16px]">Last Name</label>
             <input
               type="text"
               placeholder="enter last name"
@@ -40,7 +41,7 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="font-normal text-sm md:text-[16px]">E-mail</label>
+            <label className="font-open-sans font-normal text-sm md:text-[16px]">E-mail</label>
             <input
               type="email"
               placeholder="email@gmail.com"
@@ -65,7 +66,7 @@ const ContactForm = () => {
             </div>
           </div> */}
           <div>
-            <label className="text-sm md:text-[16px]">Phone number</label>
+            <label className="font-open-sans text-sm md:text-[16px]">Phone number</label>
             <div className="flex flex-wrap gap-2 my-2">
               <div className="relative">
                 <select className="appearance-none px-3 py-2 pr-8 text-[#B3B3B3] border border-[#D9D9D9] rounded-lg">
@@ -97,7 +98,7 @@ const ContactForm = () => {
             </select>
           </div> */}
           <div className="relative">
-            <label className="text-sm md:text-[16px]">Solution</label>
+            <label className="font-open-sans text-sm md:text-[16px]">Solution</label>
             <select className="w-full my-2 px-3 py-2 text-[#B3B3B3] border border-[#D9D9D9] rounded-lg appearance-none pr-10">
               <option>Select service</option>
               <option>Web Development</option>
@@ -111,7 +112,7 @@ const ContactForm = () => {
           </div>
 
           <div>
-            <label className="text-sm md:text-[16px]">How did you hear about us?</label>
+            <label className="font-open-sans text-sm md:text-[16px]">How did you hear about us?</label>
             <input
               type="text"
               placeholder="Add details"
@@ -120,14 +121,14 @@ const ContactForm = () => {
             />
           </div>
           <div>
-            <label className="text-sm md:text-[16px]">Tell us about your project</label>
+            <label className="font-open-sans text-sm md:text-[16px]">Tell us about your project</label>
             <input
               placeholder="Add details"
               className="w-full px-3 py-2 my-2 border border-[#D9D9D9] rounded-lg"
               required
             />
           </div>
-          <button className="font-bold text-lg w-full py-4 my-3 bg-[#7165FF] text-white rounded-lg">
+          <button className="font-mulish-bold text-lg w-full py-4 my-3 bg-[#7165FF] text-white rounded-lg leading-[32px]">
             Submit
           </button>
         </form>

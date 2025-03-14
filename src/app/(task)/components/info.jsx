@@ -130,14 +130,14 @@ const Info = () => {
           <h1 className="font-recoleta text-2xl lg:text-nowrap px-12 mb-4 md:mb-0 md:px-0 md:text-4xl font-normal md:mt-1.5 text-center md:text-left">
             Talk to you in less than{" "}
 
-            <span className="text-[#DF56FE]">24 hrs.</span>
+            <span className="text-[#DF56FE] font-recoleta  text-2xl md:text-4xl">24 hrs.</span>
           </h1>
 
         </div>
 
-        <div className=" hidden md:flex lg:flex-col md:flex-row lg:gap-2 items-center lg:items-start md:justify-between lg:mt-18 xl:mt-26 mb-3 p-6 lg:max-w-lg rounded-lg text-center bg-[#7165FF33]">
+        <div className=" hidden md:flex lg:flex-col md:flex-row lg:gap-2 items-center lg:items-start md:justify-between lg:mt-36 xl:mt-26 mb-3 p-6 lg:max-w-lg rounded-lg text-center bg-[#7165FF33]">
           <div className=" flex flex-col gap-2">
-            <h3 className=" text-left font-recoleta font-normal text-2xl md:text-[28px] capitalize">
+            <h3 className=" text-left font-recoleta font-bold text-2xl md:text-3xl capitalize">
               Schedule A Call
             </h3>
             <p className="text-left font-normal text-lg md:text-xl mr-12">
