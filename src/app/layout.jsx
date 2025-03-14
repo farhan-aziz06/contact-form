@@ -1,23 +1,21 @@
 import { Poppins, Open_Sans,Mulish,} from "next/font/google";
 import "./globals.css";
 
-// Configure Poppins
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-// Configure Open Sans
 const openSans = Open_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-open-sans", // Optional: Define a CSS variable
+  variable: "--font-open-sans",
 });
 
 const mulish = Mulish({
   subsets: ["latin"],
-  weight: "700", // Bold weight
-  variable: "--font-mulish-bold", // Optional: Define a CSS variable
+  weight: "700",
+  variable: "--font-mulish-bold",
 });
 
 export const metadata = {
