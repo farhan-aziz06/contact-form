@@ -73,7 +73,7 @@
 
 import { arrow } from "@/app/components/icons";
 import Image from "next/image";
-
+import profileImage from '../../../../public/Image.png';
 const Info = () => {
   return (
     <div className="flex lg:flex-col flex-col items-center md:items-start">
@@ -81,7 +81,7 @@ const Info = () => {
         <div className="relative flex items-center gap-4">
           <div className="relative h-40 w-40 md:h-52 md:w-52 overflow-hidden rounded-2xl">
             <Image
-              src="/image.png"
+              src={profileImage}
               alt="Profile"
               layout="fill"
               objectFit="cover"
