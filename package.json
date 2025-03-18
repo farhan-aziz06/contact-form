@@ -10,9 +10,18 @@
   },
   "dependencies": {
     "@next/font": "^14.2.15",
+    "@tabler/icons-react": "^3.31.0",
+    "aceternity-ui": "^0.2.2",
+    "aos": "^2.3.4",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.5.0",
+    "motion": "^12.5.0",
     "next": "15.2.2",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-intersection-observer": "^9.16.0",
+    "recharts": "^2.15.1",
+    "tailwind-merge": "^3.0.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

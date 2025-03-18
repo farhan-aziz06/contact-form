@@ -48,4 +48,131 @@ body {
   color: var(--foreground);
   font-family: Arial,'Recoleta', Helvetica, sans-serif;
 }
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
+.fade-in-zoom {
+  animation: zoomIn 0.8s ease-out forwards;
+}
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5; /* Start fully transparent */
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 2s ease-out forwards;
+}
+
+
+@keyframes fade-in {
+  0% {
+    opacity: 0; /* Start fully transparent */
+  }
+  50% {
+    opacity: 0.5; /* Start fully transparent */
+  }
+  100% {
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 3.5s ease-out forwards; /* 1.5s duration */
+}
+
+
+@keyframes slight-slide-up {
+  0% {
+    transform: translateY(100px); /* Start 20px below */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0); /* End at original position */
+  }
+}
+
+.animate-slight-slide-up {
+  animation: slight-slide-up 1s ease-out forwards; /* 1.5s duration */
+}
+
+@keyframes from-top-right {
+  0% {
+    transform: translateX(60px) translateY(-10px); /* Start from top-right corner */
+    opacity: 0; /* Start fully transparent */
+  }
+  100% {
+    transform: translateX(0) translateY(0); /* End at original position */
+    opacity: 1; /* End fully visible */
+  }
+}
+
+.animate-from-top-right {
+  opacity: 0; /* Initially hidden */
+  animation: from-top-right 1.5s ease-out 1s forwards; /* Delay is 1s, duration is 2.5s */
+}
+@keyframes slide-down-spin {
+  0% {
+    transform: translateX(60px) translateY(-10px) rotate(-50deg); /* Start from top-right corner */
+    opacity: 0; /* Start fully transparent */
+  }
+ 
+  100% {
+    transform: translateX(0) translateY(0) rotate(-50deg); /* Settle back to final position */
+    opacity: 1; /* Stay fully visible */
+  }
+}
+
+.animate-slide-down-spin {
+  opacity: 0; /* Initially hidden */
+  animation: slide-down-spin 0.5s ease-out 0s forwards; /* 0.5s duration, no delay */
+}
+
+
+/* styles/Discovery.module.css */
+
+@keyframes scrollIcon {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.discoveryContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust based on your layout */
+}
+
+.discoveryIcon {
+  animation: scrollIcon 5s linear forwards; /* Adjust timing as needed */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.discoveryLine {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
