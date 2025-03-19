@@ -23,13 +23,13 @@ const logos = [
 
 const CompanyData = () => {
   return (
-    <div className="flex flex-col items-center justify-center py-10 px-4 gap-7 mt-14">
+    <div className="flex flex-col items-center justify-center md:text-nowrap md:py-10 px-4 gap-3 md:gap-7 mt-10 md:mt-14">
       {" "}
       {/* Add padding here */}
-      <h2 className="font-recoleta font-normal text-[48px] text-center">
+      <h2 className="font-recoleta font-normal text-sm md:text-[48px] text-center">
         We have <span className="text-[#F149FF]">worked</span> with
       </h2>
-      <div className="w-full overflow-hidden py-6">
+      <div className="w-full overflow-hidden md:py-6">
         {" "}
         {/* Add padding to the slider container */}
         <motion.div
@@ -89,7 +89,7 @@ const Hero = () => {
       <Icons />
       <Headline />
       <Cards />
-      <div className="flex justify-evenly gap-7 mt-10">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 md:gap-7 xl:mt-10 lg:px-10">
         {statsData.map((stat, index) => (
           <StatsCard
             key={index}
@@ -99,7 +99,7 @@ const Hero = () => {
           />
         ))}
       </div>
-      <div className="w-[1240px]">
+      <div className="w-[300px] md:w-[700px] lg:w-[950px] xl:w-[1240px]">
         <CompanyData />
       </div>
     </div>

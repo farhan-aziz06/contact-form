@@ -14,7 +14,7 @@ const Info = () => {
               objectFit="cover"
             />
           </div>
-          <div className="absolute top-[120px] md:top-[170px] lg:top-[164px]  left-[60px] lg:left-[110px] w-[180px] md:w-[205px] h-[80px] md:h-[102px] gap-1.5 p-4 md:p-6 rounded-xl bg-white/10 shadow-md backdrop-blur-lg">
+          <div className="absolute top-[120px] md:top-[170px] lg:top-[164px]  left-[60px] lg:left-[110px] w-[180px] md:w-[205px] h-[80px] md:h-[102px] gap-1.5 p-4 md:p-6 rounded-xl bg-white/10 shadow-[3px_12px_20px_0px_#00000012] backdrop-blur-[20px]">
             <h2 className="text-md md:text-lg font-bold text-gray-900">
               Shayan
             </h2>

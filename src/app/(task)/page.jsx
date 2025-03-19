@@ -7,7 +7,7 @@ import Hero from "./components/hero";
 const page = () => {
   return (
     <div>
-      <div className="hidden xl:flex mt-30">
+      <div className="mt-30">
         <Hero />
       </div>
       <div>

@@ -74,15 +74,15 @@ const Discovery = () => {
     });
   }, []);
   return (
-    <div className="py-12 md:px-6 max-w-5xl mx-auto">
+    <div className="py-12 md:px-6 max-w-5xl mx-auto flex flex-col items-center gap-7">
       <h2 className="font-poppins font-normal text-lg md:text-3xl text-center mb-4">
         How we do it?
       </h2>
-      <h3 className="font-recoleta font-normal text-3xl md:text-5xl text-center mb-14">
+      <h3 className="font-recoleta font-normal text-3xl md:text-5xl text-center mb-14 lg:[593px] xl:w-[1080px]">
         World-class apps on demand, with our{" "}
         <span className="text-purple-500">process!</span>
       </h3>
-      <div className="relative">
+      <div className="relative xl:w-[1240px]">
         <div className="absolute left-[28px] top-0 w-1 h-full bg-[#5956E9]"></div>
         {steps.map((step, index) => (
           <div key={index} className="flex gap-8 items-start mb-12">
@@ -92,7 +92,7 @@ const Discovery = () => {
               </div>
             </div>
             <div className="flex flex-col lg:flex-row justify-between md:items-start w-full gap-2 md:gap-7">
-              <h4 className="font-recoleta font-normal pl-10 text-2xl md:text-4xl max-w-[300px] md:w-full">
+              <h4 className="font-recoleta font-normal pl-10 text-2xl md:text-4xl max-w-[300px] md:w-full text-[#12141D]">
                 {step.title}
               </h4>
               <div className="flex flex-col min-w-[251px] lg:w-[600px] pl-10 lg:pl-0 px-3 lg:px-0">

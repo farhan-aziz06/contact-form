@@ -1,88 +1,98 @@
 "use client";
-import React from "react";
-import Image1 from "../../../../public/image-1.png";
+import React, { useEffect } from "react";
+import Image from "next/image";
+import Image1 from "../../../../public/image2Updates.png";
 import Home from "../../../../public/Home.png";
-import Image2 from "../../../../public/image-2.png";
+import Image2 from "../../../../public/imageUpdated.png";
 import Image3 from "../../../../public/allVistor.png";
 import Gradient from "../../../../public/Gradient.png";
-import { useEffect } from "react";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {
-    deals,
-    hitRate,
-    line,
-  } from "@/components/icons";
-  
-import Image from "next/image";
+import { deals, hitRate, line } from "@/components/icons";
+
 const Cards = () => {
-    useEffect(() => {
-      AOS.init({
-        duration: 1000, 
-        once: true,
-      });
-    }, []);
-    return (
-      <div className="flex">
-        <div className="flex flex-col items-center mt-10">
-          <div className="">
-            {/* Div 1 */}
-            <div
-              className="flex justify-evenly items-center w-[504px] rounded-xl shadow-[0px_4.52px_29.4px_0px_rgba(0,0,0,0.05)] py-5 bg-[#FFFFFF] "
-              data-aos="fade-up"
-            >
-              <div className="flex items-center justify-between gap-4">
-                {hitRate}
-                <div className="flex flex-col">
-                  <h3 className="font-outfit font-semibold text-[16.79px] leading-[100%] tracking-[0.07px] text-[#171725]">
-                    68%
-                  </h3>
-                  <p className="font-outfit font-normal text-[9.79px] leading-[100%] tracking-[0.07px] text-[#696974]">
-                    Hit Rate this year
-                  </p>
-                </div>
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
+  return (
+    <div className="grid grid-cols-3 gap-x-0 mt-30 xl:mx-2 xl:w-[1344px] overflow-scroll md:overflow-hidden">
+      {/* Div 1 */}
+      <div className="flex flex-col items-center xl:mt-25 lg:mt-15 ">
+        <div
+          className="w-[400px] md:w-[500px] xl:ml-20 rounded-xl shadow py-5 bg-white lg:mr-25 xl:mr-0 md:mr-30 mr-80"
+          data-aos="fade-up" 
+        >
+          <div className="flex items-center justify-around md:justify-evenly gap-4">
+            <div className="flex items-center gap-4">
+              {hitRate}
+              <div className="flex flex-col">
+                <h3 className="font-outfit font-semibold text-lg text-gray-800">
+                  68%
+                </h3>
+                <p className="font-outfit text-xs text-gray-500">
+                  Hit Rate this year    
+                </p>
               </div>
-              <div>{line}</div>
-              <div className="flex items-center justify-between gap-4">
-                {deals}
-                <div className="flex flex-col">
-                  <h3 className="font-outfit font-semibold text-[16.79px] leading-[100%] tracking-[0.07px] text-[#171725]">
-                    76%
-                  </h3>
-                  <p className="font-outfit font-normal text-[9.79px] leading-[100%] tracking-[0.07px] text-[#696974]">
-                    Deal this year
-                  </p>
-                </div>
+            </div>
+            <div>{line}</div>
+            <div className="flex items-center gap-4">
+              {deals}
+              <div className="flex flex-col">
+                <h3 className="font-outfit font-semibold text-sm md:text-lg text-gray-800">
+                  76%
+                </h3>
+                <p className="font-outfit text-xs text-gray-500 text-nowrap">
+                  Deal this year
+                </p>
               </div>
             </div>
           </div>
-          {/* Div 2 */}
-          <div data-aos="fade-up" data-aos-delay="200">
-            <Image src={Image1} alt="image-1" />
-          </div>
         </div>
-        <div className="animate-slight-slide-up">
-          <Image src={Home} alt="image-1" />
+        <div data-aos="fade-up" data-aos-delay="200" className="mt-5 xl:ml-20 md:mr-30 lg:mr-0 mr-90">
+          <Image
+            src={Image1}
+            alt="image-1"
+            className="w-full h-auto min-w-[550px]"
+          />
         </div>
-        <div className=" flex flex-col justify-around">
+      </div>
+
+      {/* Div 2 */}
+    
+        <div
+          className="self-center mx-auto"
+          data-aos="fade-up"
+        >
+          <Image src={Home} alt="home-image"  className="w-full h-auto min-w-[200px] md:w-[250px] xl:w-[350px] lg:w-[300px] md:ml-20 mx-1 md:mb-0 mb-50"/>
+        </div>
+
+      {/* Div 3 */}
+      <div className="mx-2">
+        <div className="flex flex-col justify-evenly gap-4 xl:mt-10">
           <div data-aos="fade-up">
-            {/* className="animate-slide-up" */}
-            <Image src={Image2} alt="image-2" />
+            <Image
+              src={Image2}
+              alt="image-2"
+              className="w-full h-auto min-w-[550px] md:mr-20 ml-10 md:ml-14 lg:ml-0 "
+            />
           </div>
-  
-          <div className="flex justify-evenly items-center -mt-20">
+          <div className="hidden md:flex justify-center items-center gap-4 -mt-10 md:ml-20">
             <div data-aos="zoom-in-left">
-              <Image src={Gradient} alt="gradient" />
+              <Image src={Gradient} alt="gradient" className="w-[200px] lg:w-[250px] h-auto" />
             </div>
             <div data-aos="fade-down-left">
-              {/*  className="animate-from-top-right" */}
-              <Image src={Image3} alt="gradient" />
+              <Image src={Image3} alt="visitor-image" className="w-[300px] lg:w-[500px] h-auto" />
             </div>
           </div>
         </div>
       </div>
-    );
-  };
+    </div>
+  );
+};
 
-  export default Cards
+export default Cards;
