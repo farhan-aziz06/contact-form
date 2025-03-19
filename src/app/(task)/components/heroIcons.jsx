@@ -11,7 +11,7 @@ const {
 const Icons = () => {
   return (
     <div className="">
-      <div className="flex justify-start md:justify-center w-[350px] md:w-[676px]">
+      <div className="flex justify-start md:justify-center w-[300px] md:w-[676px]">
         {appIcon}
         {uiuxIcon}
         {designIcon}
@@ -19,7 +19,7 @@ const Icons = () => {
       </div>
       <div className="flex items-end justify-evenly">
         {leftArrow}
-        <h1 className="text-center font-poppins font-normal text-[28px] md:text-[35px] leading-[0%]">
+        <h1 className="text-center font-poppins font-normal text-[28px] md:text-[35px]">
           We help you
         </h1>
         {rightArrow}
