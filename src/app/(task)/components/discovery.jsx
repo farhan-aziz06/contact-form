@@ -74,7 +74,7 @@ const Discovery = () => {
     });
   }, []);
   return (
-    <div className="py-12 md:px-6 max-w-5xl mx-auto flex flex-col items-center gap-7">
+    <div className="py-12 md:px-6 mx-auto flex flex-col items-center gap-7">
       <h2 className="font-poppins font-normal text-lg md:text-3xl text-center mb-4">
         How we do it?
       </h2>
@@ -82,20 +82,28 @@ const Discovery = () => {
         World-class apps on demand, with our{" "}
         <span className="text-purple-500">process!</span>
       </h3>
-      <div className="relative xl:w-[1240px]">
+      <div className="relative xl:w-[1240px] mx-auto">
         <div className="absolute left-[28px] top-0 w-1 h-full bg-[#5956E9]"></div>
         {steps.map((step, index) => (
-          <div key={index} className="flex gap-8 items-start mb-12">
-            <div className="relative flex flex-col items-center gap-2">
-              <div className="absolute top-5 left-1 -translate-y-1/2 bg-[#E9E8FF] rounded-full p-3 mr-3">
-                {step.icon}
+          <div key={index} className="relative flex md:flex-col lg:flex-row xl:gap-64 items-start justify-between mb-12">
+            {/* Sticky Container for Icon and Title */}
+            <div className="sticky top-0 left-0 z-10 flex items-start gap-9 rounded-full p-1">
+              <div className="relative flex justify-between left-7 items-center gap-2 rounded-full p-1">
+                <div className="absolute top-5 -left-12 -translate-y-1/2 bg-[#E9E8FF] rounded-full p-3 border-20 border-white">
+                  {step.icon}
+                </div>
               </div>
-            </div>
-            <div className="flex flex-col lg:flex-row justify-between md:items-start w-full gap-2 md:gap-7">
-              <h4 className="font-recoleta font-normal pl-10 text-2xl md:text-4xl max-w-[300px] md:w-full text-[#12141D]">
+              <h4 className=" hidden lg:flex font-recoleta font-normal pl-10 text-2xl md:text-4xl min-w-[300px] md:w-full text-[#12141D] lg:sticky lg:top-20">
                 {step.title}
               </h4>
-              <div className="flex flex-col min-w-[251px] lg:w-[600px] pl-10 lg:pl-0 px-3 lg:px-0">
+            </div>
+
+            {/* Scrollable Content */}
+            <div className="flex flex-col lg:flex-row justify-between md:items-start w-full gap-4 ">
+            <h4 className=" flex lg:hidden font-recoleta font-normal pl-20 text-2xl md:text-4xl min-w-[300px] md:w-full text-[#12141D]">
+                {step.title}
+              </h4>
+              <div className="flex flex-col min-w-[251px] lg:w-[600px] px-3 lg:px-0 md:gap-7 pl-20  lg:pl-0">
                 <p className="mb-4 font-poppins font-normal">
                   {step.description}
                 </p>
@@ -135,3 +143,57 @@ const Discovery = () => {
 };
 
 export default Discovery;
+
+
+  {/* <div className="relative xl:w-[1240px]">
+        <div className="absolute left-[28px] top-0 w-1 h-full bg-[#5956E9]"></div>
+        {steps.map((step, index) => (
+          <div key={index} className="relative flex gap-8 items-start mb-12">
+            
+          <div className="relative flex flex-col left-7 items-center gap-2 rounded-full p-1">
+              <div className="absolute top-5 -translate-y-1/2 bg-[#E9E8FF] rounded-full p-3 border-20 border-white">
+                {step.icon}
+              </div>
+            </div>
+
+            <div className="flex flex-col lg:flex-row justify-between md:items-start w-full gap-2 md:gap-7">
+              <h4 className="font-recoleta font-normal pl-10 text-2xl md:text-4xl max-w-[300px] md:w-full text-[#12141D]">
+                {step.title}
+              </h4>
+              
+              <div className="flex flex-col min-w-[251px] lg:w-[600px] pl-10 lg:pl-0 px-3 lg:px-0">
+                <p className="mb-4 font-poppins font-normal">
+                  {step.description}
+                </p>
+                
+                <div
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  className="grid grid-cols-1 sm:grid-cols-2 gap-4"
+                >
+                  {step.images.slice(0, 1).map((image, idx) => (
+                    <Image
+                      key={idx}
+                      src={image}
+                      width={364}
+                      height={295}
+                      alt={step.title}
+                      className="w-[364px] h-[295px] rounded-[10px] object-cover block sm:hidden"
+                    />
+                  ))}
+                  {step.images.map((image, idx) => (
+                    <Image
+                      key={idx}
+                      src={image}
+                      width={364}
+                      height={295}
+                      alt={step.title}
+                      className="w-[364px] h-[295px] rounded-[10px] object-cover hidden sm:block"
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div> */}
